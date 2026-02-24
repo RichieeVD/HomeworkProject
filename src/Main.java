@@ -54,5 +54,18 @@ public class Main {
         } else {
             System.out.println("Если возраст ребенка равен " + age5 + ", то ему можно кататься на аттракционе без сопровождения взрослого.");
         }
+
+        // Задача 6
+        int count = 75; // Общее количество пассажиров в вагоне (можешь менять)
+        int totalCapacity = 102;
+        int sittingCapacity = 60;
+
+        if (count < sittingCapacity) {
+            System.out.println("В вагоне есть сидячие места.");
+        } else if (count >= sittingCapacity && count < totalCapacity) {
+            System.out.println("Сидячих мест нет, но есть стоячие места.");
+        } else {
+            System.out.println("Вагон уже полностью забит.");
+        }
     }
 }
